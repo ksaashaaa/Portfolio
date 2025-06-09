@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Портфолио фотографа</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Корзов</a>
+            <button class="menu-toggle" aria-label="Открыть меню">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <h1>Со мной можно связаться</h1>
+        
+        <!-- Контактная информация -->
+        <section class="contact-info">
+            <h2>Контактные данные</h2>
+            <address>
+                <p>Email: <a href="mailto:hello@photoart.ru">hello@photoart.ru</a></p>
+                <p>Адрес: Москва, ул. Фотографическая, д. 10</p>
+                <p>Часы работы: Пн-Пт 10:00-20:00</p>
+            </address>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="contact-form">
+            <h2>Форма обратной связи</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">
+                        Я согласен(на) с 
+                        <a href="https://korzov.com/legal-privacy" target="_blank">
+                            политикой конфиденциальности
+                        </a>
+                    </label>
+                </div>
+                
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ИП Корзов Алексей Борисович 2025. Все права защищены</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/korzov/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://vk.com/korzov" target="_blank" rel="noopener noreferrer">VK</a>
+        </div>
+    </footer>
+</body>
+<script src="animation+swiper_main.js"></script> 
+</html>
